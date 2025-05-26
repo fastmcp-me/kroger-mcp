@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 name = "kroger-mcp"
 version = "0.1.0"
 description = "FastMCP server for Kroger API integration"
-readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
     {name = "Stephen Thoemmes", email = "thoemmes.stephen@gmail.com"},
@@ -51,7 +50,7 @@ kroger-mcp-cli = "kroger_mcp.cli:main"
 Homepage = "https://github.com/CupOfOwls/kroger-mcp"
 Repository = "https://github.com/CupOfOwls/kroger-mcp"
 Issues = "https://github.com/CupOfOwls/kroger-mcp/issues"
-Kroger Documentation = "https://developer.kroger.com/documentation/public/"
+Kroger_Documentation = "https://developer.kroger.com/documentation/public/"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/kroger_mcp"]
