@@ -7,5 +7,6 @@ This package contains all the tool modules organized by functionality:
 - cart_tools: Shopping cart management with local tracking
 - info_tools: Chain and department information
 - profile_tools: User profile and authentication
+- auth_tools: OAuth authentication tools
 - shared: Common utilities and client management
 """

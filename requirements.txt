@@ -2,7 +2,7 @@
 fastmcp
 
 # Kroger API client
-kroger-api
+kroger-api>=0.2.0
 
 # Additional dependencies (if not already included in kroger-api)
 requests

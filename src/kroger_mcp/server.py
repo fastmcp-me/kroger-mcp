@@ -26,6 +26,7 @@ from .tools import cart_tools
 from .tools import info_tools
 from .tools import profile_tools
 from .tools import utility_tools
+from .tools import auth_tools
 
 # Import prompts
 from . import prompts
@@ -54,7 +55,11 @@ def create_server() -> FastMCP:
         5. View current cart with view_current_cart
         6. Mark order as placed with mark_order_placed
         
-        Authentication is handled automatically - OAuth flows will open in your browser when needed.
+        Authentication Flow:
+        1. Use start_authentication to get an authorization URL
+        2. Open the URL in your browser and authorize the application
+        3. Copy the full redirect URL from your browser
+        4. Use complete_authentication with the redirect URL to finish the process
         
         Cart Tracking:
         This server maintains a local record of items added to your cart since the Kroger API
@@ -70,6 +75,7 @@ def create_server() -> FastMCP:
     info_tools.register_tools(mcp)
     profile_tools.register_tools(mcp)
     utility_tools.register_tools(mcp)
+    auth_tools.register_tools(mcp)
     
     # Register prompts
     prompts.register_prompts(mcp)
