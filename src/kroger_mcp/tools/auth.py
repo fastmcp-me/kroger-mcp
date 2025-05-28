@@ -77,12 +77,13 @@ def register_auth_tools(mcp):
         return {
             "auth_url": auth_url,
             "instructions": (
-                "1. Open this URL in your browser\n"
+                "1. Click this link to authorize: [🔗 Authorize Kroger Access]({auth_url})\n"
+                "   - Please present the authorization URL as a clickable markdown link\n"
                 "2. Log in to your Kroger account and authorize the application\n"
                 "3. After authorization, you'll be redirected to a callback URL\n"
                 "4. Copy the FULL redirect URL from your browser's address bar\n"
                 "5. Use the complete_authentication tool with that URL to complete the process"
-            )
+            ).format(auth_url=auth_url)
         }
     
     @mcp.tool()

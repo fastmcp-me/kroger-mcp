@@ -8,6 +8,9 @@ Using Claude with this MCP server to search for stores, find products, and add i
 
 ![Kroger MCP Demo](https://github.com/user-attachments/assets/your-demo-image-here)
 
+## Changelog
+A changelog with recent changes is [here](CHANGELOG.md).
+
 ## 🚀 Quick Start
 
 ### Prerequisites

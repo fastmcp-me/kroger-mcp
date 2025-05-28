@@ -248,7 +248,7 @@ wheels = [
 
 [[package]]
 name = "kroger-api"
-version = "0.1.0"
+version = "0.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
@@ -256,14 +256,14 @@ dependencies = [
     { name = "requests" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a7/57/904b454000e89077e2dde18fbce60e7d7521d7467863da9def9ec50da1f9/kroger_api-0.1.0.tar.gz", hash = "sha256:f846a6ad6b9c5bf7cea49408e900f0e7f4f4143cbb686e2e57b157e1a5054eaf", size = 687441 }
+sdist = { url = "https://files.pythonhosted.org/packages/16/58/f3ae148c033a4389285c4eb294e1762bab1c3ddca8f705f4220c5b047d5b/kroger_api-0.2.0.tar.gz", hash = "sha256:a6734c6768fe1a27b36052e120da45cef4788ac6246a2f621ab4e9f5513c0d57", size = 2038906 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f8/34/27981d9a1b53cbf8a4240ced328e81d0bd90b267250b805e3d704c7277d2/kroger_api-0.1.0-py3-none-any.whl", hash = "sha256:52975031506bdb9e465f340fb5d1f30a7b522df393be16dc1a5b3389dde6247f", size = 20643 },
+    { url = "https://files.pythonhosted.org/packages/ec/1e/a9f74deef55959cf478f754a3527399812d3f95d12ee0e17b4a83c4e521b/kroger_api-0.2.0-py3-none-any.whl", hash = "sha256:11c7ecb9c9b668f1b09213e23024b1161f75a99fde08176ce08d46e174662368", size = 22493 },
 ]
 
 [[package]]
 name = "kroger-mcp"
-version = "0.1.0"
+version = "0.2.0"
 source = { editable = "." }
 dependencies = [
     { name = "fastmcp" },
@@ -285,7 +285,7 @@ dev = [
 requires-dist = [
     { name = "black", marker = "extra == 'dev'" },
     { name = "fastmcp", specifier = ">=2.0.0" },
-    { name = "kroger-api" },
+    { name = "kroger-api", specifier = ">=0.2.0" },
     { name = "pydantic", specifier = ">=2.0.0" },
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "pytest-asyncio", marker = "extra == 'dev'" },
